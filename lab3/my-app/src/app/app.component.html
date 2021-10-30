@@ -1,0 +1,14 @@
+
+
+<input placeholder="num" type="number" [value]="input" (keyup)="change($event)" />
+<button (click)="onSave()">Add</button>
+
+<ul>
+  <li *ngFor="let num of nums">{{ num }}</li>
+</ul>
+<br/>
+
+<app-child-component [someInput]="nums" ></app-child-component> 
+
+
+<router-outlet></router-outlet>

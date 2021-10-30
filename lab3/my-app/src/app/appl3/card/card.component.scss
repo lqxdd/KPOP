@@ -1,0 +1,28 @@
+input {
+    display: block;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+}
+
+button {
+   display: block;
+   margin: 0 auto;
+   margin-top: 1rem;
+}
+
+.img {
+    margin-top: 1rem;
+     display: flex;
+    justify-content: center; 
+
+    img {
+        max-width: 500px;
+        max-height: 400px;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+
+}

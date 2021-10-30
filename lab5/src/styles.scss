@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; 
+    background: rgb(238,121,189);
+background: linear-gradient(0deg, rgba(238,121,189,1) 0%, rgba(163,224,255,1) 100%);
+background-repeat: repeat-y;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.wrapper {
+    margin: 0 auto;
+    width: 600px;
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+
+ul {
+    padding-left: 10px;
+    list-style-type: none;
+}
+
+input {
+    height: 31px;
+}

@@ -1,0 +1,23 @@
+<div>
+   <h2>Згідно варіанту створіть додаток, який буде виконувати наступне: <br>
+      3.	Показує картинки, абсолютний шлях до яких введений у текстове поле.
+      </h2>
+
+      <input type="text" [(ngModel)]='imgUrl'> 
+
+      <button (click)='showImg()'> Show image </button>
+      <div *ngIf="toggle" class='img'>
+      <img [src]="imgUrl" alt="">
+      </div>
+
+   </div>
+  <!--  <input type="number" [(ngModel)]='num1'>
+   <input type="number" [(ngModel)]='num2'> 
+   <div class="sum"> Sum = {{num1 + num2}}</div>
+   <div class="diff"> Difference = {{num1 - num2}}</div>
+   <div class="mult"> Multiplication = {{num1 * num2}}</div>
+</div>
+
+<h2>
+   {{ getResult(num1, num2) }}
+</h2>  -->

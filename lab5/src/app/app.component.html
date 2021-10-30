@@ -1,0 +1,39 @@
+<style>
+  :host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    height: 100vh;
+    width: 100vw;
+  }
+</style>
+
+<input placeholder="Type the city" type="text" [value]="input" (keyup)="change($event)" />
+<button mat-raised-button (click)="onSave()">Search</button>
+
+<ul>
+  <li *ngFor="let item of data">
+   <strong> {{ item.name }}  </strong> 
+    <br /> 
+    <button mat-raised-button (click)="openDialog(item,theBoundCallback)">Popup</button>
+    <button mat-raised-button (click)="onFavourite(item)">Fav</button> <br />
+    Температура: {{ item.the_temp }} <br />Опади: {{ item.humidity }}<br />
+    Швидкість вітру: {{ item.wind_speed }}
+  </li>
+</ul>
+<br />
+
+
+<br />
+<br />
+<br />
+<app-child-component [someInput]="favourites"></app-child-component>
+
+<router-outlet></router-outlet>
