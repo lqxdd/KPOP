@@ -88,7 +88,7 @@ export class AppComponent implements OnInit {
 
 @Component({
   selector: 'dialogComp',
-  template: `<p>userId:{{ data.userId }}</p>
+  template: `<p>userId: 1</p>
     <p>id:{{ data.id }}</p>
     <p>title:{{ data.title }}</p>
     <p>completed:{{ data.completed }}</p> `,
@@ -116,22 +116,13 @@ export class StorageEnjoyer implements OnChanges {
   constructor() {}
 
   ngOnChanges() {
-    /*let data = this.users.data;
-    data = this.inpUsers;
-    this.users.data = data;*/
-    //this.users = [...this.users];
-    //this.tmpUsers =this.inpUsers;
+   
     if (this.inpUsers) {
       this.users = this.inpUsers;
-      //this.users =[...this.inpUsers];
+     
     }
 
-    //this.users = [...this.users]
-    //console.log("changed");
-    //console.log(this.users);
-    //console.log("---");
-
-    //console.log("---");
+   
     if (this.users) {
       if (this.table) {
         console.log(this.table);

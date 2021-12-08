@@ -1,0 +1,31 @@
+ФИО:<input type="text" [(ngModel)]="userData.name">
+<div *ngIf="!(nameErr==='')"  id="nameErr">{{nameErr}}</div>
+<hr>
+Адрес:<input type="text" [(ngModel)]="userData.login">
+<div *ngIf="!(loginErr==='')" id="loginErr">{{loginErr}}</div>
+<hr>
+Город:<input type="text" [(ngModel)]="userData.city">
+<hr>
+Почтовый индекс:<input type="text" [(ngModel)]="userData.index">
+<hr>
+Телефон:<input type="text" [(ngModel)]="userData.phone">
+<div *ngIf="!(phoneErr==='')"  id="phoneErr">{{phoneErr}}</div>
+<hr>
+Дополнительная информация:<input type="text" [(ngModel)]="userData.msgText">
+<hr>
+<!-- Кто вы:<input type="radio" name="sex" value="male"  [(ngModel)]="userData.sex" >М <input type="radio" name="sex" value="female"[(ngModel)]="userData.sex">Ж
+<div *ngIf="!(sexErr==='')"  id="sexErr">{{sexErr}}</div>
+<hr> -->
+<!-- Дата рождения:<input type="date" [(ngModel)]="userData.bd">
+<div *ngIf="!(bdErr==='')"  id="bdErr">{{bdErr}}</div>
+<hr> -->
+Email:<input type="text" [(ngModel)]="userData.email">
+<div *ngIf="!(emailErr==='')"  id="emailErr">{{emailErr}}</div>
+<hr>
+URL:<input type="text" [(ngModel)]="userData.url">
+<div *ngIf="!(urlErr==='')" id="urlErr">{{urlErr}}</div>
+<hr>
+Кредитная карта:<input type="text" [(ngModel)]="userData.card">
+<div *ngIf="!(cardErr==='')"  id="cardErr">{{cardErr}}</div>
+<hr>
+<input type="button"  value="Отправить" (click)="checkData()">

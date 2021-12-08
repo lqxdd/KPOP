@@ -1,0 +1,25 @@
+<h1>Персональная информация</h1>
+<br/>
+ФИО:<input type="text" [(ngModel)]="userData.name">
+<div *ngIf="!(nameErr==='')"  id="nameErr">{{nameErr}}</div>
+<hr>
+адрес:<input type="text" [(ngModel)]="userData.login">
+<div *ngIf="!(loginErr==='')" id="loginErr">{{loginErr}}</div>
+<hr>
+password:<input type="password" name="sex" value="male"  [(ngModel)]="userData.sex" >
+<div *ngIf="!(sexErr==='')"  id="sexErr">{{sexErr}}</div>
+<hr>
+conf password:<input type="password" [(ngModel)]="userData.bd">
+<div *ngIf="!(bdErr==='')"  id="bdErr">{{bdErr}}</div>
+<hr>
+Email:<input type="text" [(ngModel)]="userData.email">
+<div *ngIf="!(emailErr==='')"  id="emailErr">{{emailErr}}</div>
+<hr>
+
+Телефон:<input type="text" [(ngModel)]="userData.phone">
+<div *ngIf="!(phoneErr==='')"  id="phoneErr">{{phoneErr}}</div>
+<hr>
+Дополнительная информация:<input type="text" [(ngModel)]="userData.msgText">
+<hr>
+
+<input type="button"  value="Отправить" (click)="checkData()">

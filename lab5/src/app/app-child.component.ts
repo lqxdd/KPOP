@@ -11,7 +11,4 @@ export class MyComponent implements OnChanges {
   ngOnChanges() {
     console.log(this.someInput);
   }
-
-
-
 }
